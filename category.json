@@ -1,0 +1,173 @@
+
+
+
+[
+  {
+    "type": "header",
+    "version": "5.2.0",
+    "comment": "Export to JSON plugin for PHPMyAdmin"
+  },
+  { "type": "database", "name": "mclinpll_rozaana_fresh" },
+  {
+    "type": "table",
+    "name": "category",
+    "database": "mclinpll_rozaana_fresh",
+    "data": [
+      {
+        "id": "1",
+        "category_id": "C0001",
+        "name": "Vegetables",
+        "logo_70": "",
+        "logo_24": "de8d39fdc4241b34153e8b4a181457d2.png",
+        "menu_banner": "f0b3c13c08a87cc8d481b4cc906259d6.jpg",
+        "description": "",
+        "status": "Active",
+        "entry_time": "20210406112002",
+        "entry_by": "KHA0001",
+        "update_time": "20210713133916",
+        "update_by": "KHA0001"
+      },
+      {
+        "id": "2",
+        "category_id": "C0002",
+        "name": "Fruits",
+        "logo_70": "",
+        "logo_24": "b49abce4e520ca25faa4f0f0e0fb9fce.png",
+        "menu_banner": "",
+        "description": "",
+        "status": "Active",
+        "entry_time": "20210406112010",
+        "entry_by": "KHA0001",
+        "update_time": "20210712114903",
+        "update_by": "KHA0001"
+      },
+      {
+        "id": "4",
+        "category_id": "C0003",
+        "name": "Groceries",
+        "logo_70": "",
+        "logo_24": "a1c8edc2600164949e53cfb2b39c7e82.jpg",
+        "menu_banner": "",
+        "description": "",
+        "status": "Active",
+        "entry_time": "20210413140511",
+        "entry_by": "KHA0001",
+        "update_time": "20210717141344",
+        "update_by": "KHA0001"
+      },
+      {
+        "id": "5",
+        "category_id": "C0005",
+        "name": "Snacks &  Beverages",
+        "logo_70": "",
+        "logo_24": "a90ad0da75f6d15e1f0ac551c256ac50.jpg",
+        "menu_banner": "",
+        "description": "",
+        "status": "Active",
+        "entry_time": "20210413141608",
+        "entry_by": "KHA0001",
+        "update_time": "20210717141351",
+        "update_by": "KHA0001"
+      },
+      {
+        "id": "6",
+        "category_id": "C0006",
+        "name": "Household Care",
+        "logo_70": "",
+        "logo_24": "bf6290d410366a7d10b35ada96d1db48.jpg",
+        "menu_banner": "",
+        "description": "",
+        "status": "Active",
+        "entry_time": "20210413141944",
+        "entry_by": "KHA0001",
+        "update_time": "20210717141239",
+        "update_by": "KHA0001"
+      },
+      {
+        "id": "7",
+        "category_id": "C0007",
+        "name": "Eggs & Dairy",
+        "logo_70": "",
+        "logo_24": "79f06398899aa68bae83282b4c98f85a.jpg",
+        "menu_banner": "",
+        "description": "",
+        "status": "Active",
+        "entry_time": "20210415164444",
+        "entry_by": "KHA0001",
+        "update_time": "20210920142552",
+        "update_by": "KHA0001"
+      },
+      {
+        "id": "8",
+        "category_id": "C0008",
+        "name": "Personal Care",
+        "logo_70": "",
+        "logo_24": "008bc5afcfec069e83eda3d2fcc82026.jpg",
+        "menu_banner": "",
+        "description": "",
+        "status": "Active",
+        "entry_time": "20210416130535",
+        "entry_by": "KHA0001",
+        "update_time": "20210717141159",
+        "update_by": "KHA0001"
+      },
+      {
+        "id": "9",
+        "category_id": "C0009",
+        "name": "Pooja Samagri",
+        "logo_70": "",
+        "logo_24": "4382295b8c03b7b4b398f310871f8ccc.jpg",
+        "menu_banner": "",
+        "description": "",
+        "status": "Active",
+        "entry_time": "20210416132718",
+        "entry_by": "KHA0001",
+        "update_time": "20210717141149",
+        "update_by": "KHA0001"
+      },
+      {
+        "id": "10",
+        "category_id": "C0010",
+        "name": "Medical care",
+        "logo_70": "",
+        "logo_24": "e999dc008d4bc0e0349fa824eb663777.png",
+        "menu_banner": "",
+        "description": "",
+        "status": "Active",
+        "entry_time": "20210419154825",
+        "entry_by": "KHA0001",
+        "update_time": "20210712114016",
+        "update_by": "KHA0001"
+      },
+      {
+        "id": "11",
+        "category_id": "C0011",
+        "name": "Frozen Products",
+        "logo_70": "",
+        "logo_24": "5033fd9ca925f86dbd50b35dcdd85206.png",
+        "menu_banner": "",
+        "description": "",
+        "status": "Active",
+        "entry_time": "20210515122354",
+        "entry_by": "KHA0001",
+        "update_time": "20210712114129",
+        "update_by": "KHA0001"
+      },
+      {
+        "id": "12",
+        "category_id": "C0012",
+        "name": "Essential",
+        "logo_70": "",
+        "logo_24": "87fea1f7e43c225ba543b5a25f847134.png",
+        "menu_banner": "",
+        "description": "",
+        "status": "Active",
+        "entry_time": "20210522115106",
+        "entry_by": "KHA0001",
+        "update_time": "20210806140412",
+        "update_by": "KHA0001"
+      }
+    
+    ]
+  }
+]
