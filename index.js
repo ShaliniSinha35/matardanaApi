@@ -17,7 +17,7 @@ const port = process.env.PORT || 5000;
 app.use("/images", express.static(path.join(__dirname, "images")));
 
 app.get("/", (req, res) => {
-  return res.status(200).json(logo);
+  res.json(logo);
 });
 
 
