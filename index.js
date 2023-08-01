@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000;
 // const category = require("./category");
 
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 app.use('/images', express.static('images'));
 
 
