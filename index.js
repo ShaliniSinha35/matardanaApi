@@ -11,7 +11,7 @@ const data=require("./data.json")
 const category=require("./category")
 const logo=require("./logo.json")
 
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 5000
 
 
 
