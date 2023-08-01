@@ -16,12 +16,14 @@ const port = process.env.PORT || 5000;
 app.get("/", (req, res) => {
   res.send(data);
 });
+// Serve the images
+app.use("/images", express.static(path.join(__dirname, "images")));
+
 app.get("/logo", (req, res) => {
   return res.status(200).json(logo);
 });
 
-// Serve the images
-app.use("/images", express.static(path.join(__dirname, "images")));
+
 
 app.get("/category", (req, res) => {
   res.send(category);
