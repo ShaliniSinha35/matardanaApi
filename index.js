@@ -6,7 +6,7 @@ app.use(cors());
 const logo = require("./logo.json");
 
 const port = process.env.PORT || 5000;
-app.use("/images", express.static(path.join(__dirname, "images")));
+app.use("/images", express.static(path.resolve(__dirname, "images")));
 // const data = require("./data.json");
 // const category = require("./category");
 // app.use(express.static('public'));
