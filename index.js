@@ -18,9 +18,16 @@ const port = process.env.PORT || 5000;
 // Serve the images
 
 
-app.get('/data', (req, res) => {
-  return res.status(200).json(logo);
+app.get('/', (req, res) => {
+  const newData = logo.map(item => {
+    return {
+      ...item,
+      img: `${req.protocol}://${req.get('host')}${item.img}` // Provide the full image URL
+    };
+  });
+  return res.status(200).json(newData);
 });
+
 
 
 
