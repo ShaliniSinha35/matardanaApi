@@ -3,7 +3,6 @@ const cors = require("cors")
 const app = express();
 
 
-
 app.use(cors())
 const data=require("./data.json")
 const category=require("./category")
@@ -11,7 +10,8 @@ const logo=require("./logo.json")
 
 const port = process.env.PORT || 5000
 
-
+app.use(express.static('public'));
+app.use('/images', express.static('images'));
 
 app.get("/", (req, res) => {
   res.send(data);
