@@ -1,6 +1,9 @@
 const express = require("express");
 const cors = require("cors")
 const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
+//routes
+require('./routes/image_routes')(app);
 
 
 app.use(cors())
@@ -21,6 +24,8 @@ app.get("/logo", (req, res) => {
 app.get("/category", (req, res) => {
   res.send(category);
 });
+app.use('/images',express.static('images'))
+
 
 
 app.listen(port, () => {
