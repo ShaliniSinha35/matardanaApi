@@ -6,13 +6,11 @@ app.use(cors());
 const logo = require("./logo.json");
 
 const port = process.env.PORT || 5000;
-// app.use("/images", express.static(path.join(__dirname, "images")));
+app.use("/images", express.static(path.join(__dirname, "images")));
 // const data = require("./data.json");
 // const category = require("./category");
-
-
 // app.use(express.static('public'));
-app.use('/images', express.static('images'));
+// app.use('/images', express.static('images'));
 
 
 // Serve the images
@@ -28,9 +26,6 @@ app.get('/', (req, res) => {
   return res.status(200).json(newData);
 
 });
-
-
-
 
 
 // app.get("/category", (req, res) => {
