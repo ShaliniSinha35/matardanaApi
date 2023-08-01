@@ -1,9 +1,7 @@
 const express = require("express");
 const cors = require("cors")
 const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));
-//routes
-require('./routes/image_routes')(app);
+
 
 
 app.use(cors())
