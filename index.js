@@ -1,30 +1,32 @@
 const express = require("express");
-const cors = require("cors")
+const cors = require("cors");
 const app = express();
+const path=require("path")
 
+app.use(cors());
+const data = require("./data.json");
+const category = require("./category");
+const logo = require("./logo.json");
 
-app.use(cors())
-const data=require("./data.json")
-const category=require("./category")
-const logo=require("./logo.json")
+const port = process.env.PORT || 5000;
 
-const port = process.env.PORT || 5000
-
-app.use(express.static('public'));
-app.use('/images', express.static('images'));
+// app.use(express.static('public'));
+// app.use('/images', express.static('images'));
 
 app.get("/", (req, res) => {
   res.send(data);
 });
 app.get("/logo", (req, res) => {
-  res.send(logo);
+  return res.status(200).json(logo);
 });
+
+// Serve the images
+app.use("/images", express.static(path.join(__dirname, "images")));
+
 app.get("/category", (req, res) => {
   res.send(category);
 });
-app.use('/images',express.static('images'))
-
-
+// app.use('/images',express.static('images'))
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
