@@ -9,9 +9,7 @@ const category=require("./category.json")
 const products=require("./products.json")
 
 const port = process.env.PORT || 5000;
-// app.use("/images", express.static(path.resolve(__dirname, "/images")));
-// const data = require("./data.json");
-// const category = require("./category");
+
 
 
 app.use(express.static('public'));
@@ -58,7 +56,7 @@ app.get('/category', (req, res) => {
 
 // products
 app.use('/public/images/product', express.static(path.resolve(__dirname,'public/images/product')));
-app.get('/product', (req, res) => {
+app.get('/products', (req, res) => {
   const newData = products.map(item => {
     return {
       ...item,
