@@ -54,19 +54,19 @@ app.get('/category', (req, res) => {
 
 });
 
-// products
-app.use('/public/images/product', express.static(path.resolve(__dirname,'public/images/product')));
-app.get('/item', (req, res) => {
-  const newData = products.map(item => {
-    return {
-      ...item,
-      img: `${req.protocol}://${req.get('host')}${item.images[0]}` //  full image URL
+// // products
+// app.use('/public/images/product', express.static(path.resolve(__dirname,'public/images/product')));
+// app.get('/item', (req, res) => {
+//   const newData = products.map(item => {
+//     return {
+//       ...item,
+//       img: `${req.protocol}://${req.get('host')}${item.images[0]}` //  full image URL
 
-    };
-  });
-  return res.status(200).json(newData);
+//     };
+//   });
+//   return res.status(200).json(newData);
 
-});
+// });
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
