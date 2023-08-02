@@ -41,18 +41,18 @@ app.get('/banner', (req, res) => {
 
 });
 
-// category
-app.use('/public/images/category', express.static(path.resolve(__dirname,'public/images/category')));
-app.get('/category', (req, res) => {
-  const newData = category.map(item => {
-    return {
-      ...item,
-      img: `${req.protocol}://${req.get('host')}${item.img}` //  full image URL
-    };
-  });
-  return res.status(200).json(newData);
+// // category
+// app.use('/public/images/category', express.static(path.resolve(__dirname,'public/images/category')));
+// app.get('/category', (req, res) => {
+//   const newData = category.map(item => {
+//     return {
+//       ...item,
+//       img: `${req.protocol}://${req.get('host')}${item.img}` //  full image URL
+//     };
+//   });
+//   return res.status(200).json(newData);
 
-});
+// });
 
 // products
 app.use('/public/images/product', express.static(path.resolve(__dirname,'public/images/product')));
