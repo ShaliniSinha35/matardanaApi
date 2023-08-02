@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 // const data = require("./data.json");
 // const category = require("./category");
 app.use(express.static('public'));
-app.use('/images/logo', express.static(path.resolve(__dirname,'images/logo')));
+app.use('/public/images/logo', express.static(path.resolve(__dirname,'public/images/logo')));
 
 
 // Serve the images
