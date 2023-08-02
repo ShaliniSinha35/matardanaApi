@@ -6,7 +6,7 @@ app.use(cors());
 const logo = require("./logo.json");
 const banner=require("./banner.json")
 const category=require("./category.json")
-const products=require("./products.json")
+const products=require("./data.json")
 
 const port = process.env.PORT || 5000;
 
@@ -17,7 +17,7 @@ app.use('/public/images/logo', express.static(path.resolve(__dirname,'public/ima
 
 
 // Serve the logo
-app.get('/logo', (req, res) => {
+app.get('/', (req, res) => {
   const newData = logo.map(item => {
     return {
       ...item,
@@ -56,11 +56,11 @@ app.get('/category', (req, res) => {
 
 // products
 app.use('/public/images/product', express.static(path.resolve(__dirname,'public/images/product')));
-app.get('/', (req, res) => {
-  const newData = category.map(item => {
+app.get('/products', (req, res) => {
+  const newData = products.map(item => {
     return {
       ...item,
-      img: `${req.protocol}://${req.get('host')}${item.img}` //  full image URL
+      img: `${req.protocol}://${req.get('host')}${item.images[0]}` //  full image URL
 
     };
   });
