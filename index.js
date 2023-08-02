@@ -60,7 +60,7 @@ app.get('/products', (req, res) => {
   const newData = category.map(item => {
     return {
       ...item,
-      img: `${req.protocol}://${req.get('host')}${item.images[0]}` //  full image URL
+      img: `${req.protocol}://${req.get('host')}${item.img}` //  full image URL
 
     };
   });
