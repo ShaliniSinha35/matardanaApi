@@ -1,25 +1,13 @@
 
 
-
-[
-  {
-    "type": "header",
-    "version": "5.2.0",
-    "comment": "Export to JSON plugin for PHPMyAdmin"
-  },
-  { "type": "database", "name": "mclinpll_rozaana_fresh" },
-  {
-    "type": "table",
-    "name": "category",
-    "database": "mclinpll_rozaana_fresh",
-    "data": [
+ [
       {
         "id": "1",
         "category_id": "C0001",
         "name": "Vegetables",
         "logo_70": "",
-        "logo_24": "de8d39fdc4241b34153e8b4a181457d2.png",
-        "menu_banner": "f0b3c13c08a87cc8d481b4cc906259d6.jpg",
+        "img": "/images/category/de8d39fdc4241b34153e8b4a181457d2.png",
+        "menu_banner": "/images/category/f0b3c13c08a87cc8d481b4cc906259d6.jpg",
         "description": "",
         "status": "Active",
         "entry_time": "20210406112002",
@@ -32,7 +20,7 @@
         "category_id": "C0002",
         "name": "Fruits",
         "logo_70": "",
-        "logo_24": "b49abce4e520ca25faa4f0f0e0fb9fce.png",
+        "img": "/images/category/b49abce4e520ca25faa4f0f0e0fb9fce.png",
         "menu_banner": "",
         "description": "",
         "status": "Active",
@@ -46,7 +34,7 @@
         "category_id": "C0003",
         "name": "Groceries",
         "logo_70": "",
-        "logo_24": "a1c8edc2600164949e53cfb2b39c7e82.jpg",
+        "img": "images/category/a1c8edc2600164949e53cfb2b39c7e82.jpg",
         "menu_banner": "",
         "description": "",
         "status": "Active",
@@ -60,7 +48,7 @@
         "category_id": "C0005",
         "name": "Snacks &  Beverages",
         "logo_70": "",
-        "logo_24": "a90ad0da75f6d15e1f0ac551c256ac50.jpg",
+        "img": "/images/category/a90ad0da75f6d15e1f0ac551c256ac50.jpg",
         "menu_banner": "",
         "description": "",
         "status": "Active",
@@ -74,7 +62,7 @@
         "category_id": "C0006",
         "name": "Household Care",
         "logo_70": "",
-        "logo_24": "bf6290d410366a7d10b35ada96d1db48.jpg",
+        "img": "/images/category/bf6290d410366a7d10b35ada96d1db48.jpg",
         "menu_banner": "",
         "description": "",
         "status": "Active",
@@ -88,7 +76,7 @@
         "category_id": "C0007",
         "name": "Eggs & Dairy",
         "logo_70": "",
-        "logo_24": "79f06398899aa68bae83282b4c98f85a.jpg",
+        "img": "/images/category/79f06398899aa68bae83282b4c98f85a.jpg",
         "menu_banner": "",
         "description": "",
         "status": "Active",
@@ -102,7 +90,7 @@
         "category_id": "C0008",
         "name": "Personal Care",
         "logo_70": "",
-        "logo_24": "008bc5afcfec069e83eda3d2fcc82026.jpg",
+        "img": "/images/category/008bc5afcfec069e83eda3d2fcc82026.jpg",
         "menu_banner": "",
         "description": "",
         "status": "Active",
@@ -116,7 +104,7 @@
         "category_id": "C0009",
         "name": "Pooja Samagri",
         "logo_70": "",
-        "logo_24": "4382295b8c03b7b4b398f310871f8ccc.jpg",
+        "img": "/images/category/4382295b8c03b7b4b398f310871f8ccc.jpg",
         "menu_banner": "",
         "description": "",
         "status": "Active",
@@ -130,7 +118,7 @@
         "category_id": "C0010",
         "name": "Medical care",
         "logo_70": "",
-        "logo_24": "e999dc008d4bc0e0349fa824eb663777.png",
+        "img": "/images/category/e999dc008d4bc0e0349fa824eb663777.png",
         "menu_banner": "",
         "description": "",
         "status": "Active",
@@ -144,7 +132,7 @@
         "category_id": "C0011",
         "name": "Frozen Products",
         "logo_70": "",
-        "logo_24": "5033fd9ca925f86dbd50b35dcdd85206.png",
+        "img": "/images/category/5033fd9ca925f86dbd50b35dcdd85206.png",
         "menu_banner": "",
         "description": "",
         "status": "Active",
@@ -158,7 +146,7 @@
         "category_id": "C0012",
         "name": "Essential",
         "logo_70": "",
-        "logo_24": "87fea1f7e43c225ba543b5a25f847134.png",
+        "img": "/images/category/87fea1f7e43c225ba543b5a25f847134.png",
         "menu_banner": "",
         "description": "",
         "status": "Active",
@@ -169,5 +157,4 @@
       }
     
     ]
-  }
-]
+

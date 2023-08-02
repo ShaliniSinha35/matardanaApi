@@ -5,6 +5,7 @@ const path=require("path")
 app.use(cors());
 const logo = require("./logo.json");
 const banner=require("./banner.json")
+const category=require("./category.json")
 
 const port = process.env.PORT || 5000;
 // app.use("/images", express.static(path.resolve(__dirname, "/images")));
@@ -42,10 +43,18 @@ app.get('/banner', (req, res) => {
 });
 
 
-// app.get("/category", (req, res) => {
-//   res.send(category);
-// });
-// app.use('/images',express.static('images'))
+// category
+app.use('/public/images/category', express.static(path.resolve(__dirname,'public/images/category')));
+app.get('/category', (req, res) => {
+  const newData = category.map(item => {
+    return {
+      ...item,
+      img: `${req.protocol}://${req.get('host')}${item.img}` //  full image URL
+    };
+  });
+  return res.status(200).json(newData);
+
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
