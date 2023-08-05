@@ -6,7 +6,7 @@ app.use(cors());
 const logo = require("./logo.json");
 const banner=require("./banner.json")
 const category=require("./category.json")
-const products=require("./data.json")
+const products=require("./products.json")
 
 const port = process.env.PORT || 5000;
 
