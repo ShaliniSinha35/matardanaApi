@@ -17,7 +17,7 @@ app.use('/public/images/logo', express.static(path.resolve(__dirname,'public/ima
 
 
 // Serve the logo
-app.get('/', (req, res) => {
+app.get('/logo', (req, res) => {
   const newData = logo.map(item => {
     return {
       ...item,
@@ -56,7 +56,7 @@ app.get('/category', (req, res) => {
 
 // products
 app.use('/public/images/product', express.static(path.resolve(__dirname,'public/images/product')));
-app.get('/product', (req, res) => {
+app.get('/', (req, res) => {
   // const newData = products.map(item => {
   //   return {
   //     ...item,
