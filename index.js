@@ -15,27 +15,14 @@ const port = process.env.PORT || 5000;
 app.use(express.static('public'));
 
 
-// products
-app.use('/public/images/product', express.static(path.resolve(__dirname,'public/images/product')));
-app.get('/', (req, res) => {
-  const newData = products.map(item => {
-    return {
-      ...item,
-      img: `${req.protocol}://${req.get('host')}${item.images[0]}` //  full image URL
 
-    };
-  });
-  return res.status(200).json(newData);
-
-
-});
 
 
 
 
 // Serve the logo
 app.use('/public/images/logo', express.static(path.resolve(__dirname,'public/images/logo')));
-app.get('/logo', (req, res) => {
+app.get('/', (req, res) => {
   const newData = logo.map(item => {
     return {
       ...item,
@@ -71,7 +58,20 @@ app.get('/category', (req, res) => {
   return res.status(200).json(newData);
 
 });
+// products
+app.use('/public/images/product', express.static(path.resolve(__dirname,'public/images/product')));
+app.get('/product', (req, res) => {
+  const newData = products.map(item => {
+    return {
+      ...item,
+      img: `${req.protocol}://${req.get('host')}${item.images[0]}` //  full image URL
 
+    };
+  });
+  return res.status(200).json(newData);
+
+
+});
 
 
 app.listen(port, () => {
