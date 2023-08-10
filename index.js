@@ -1,7 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const path=require("path")
+const path=require("path");
+const bodyParser = require('body-parser');
 app.use(cors());
 const logo = require("./logo.json");
 const banner=require("./banner.json")
@@ -11,12 +12,9 @@ const products=require("./products.json")
 const port = process.env.PORT || 5000;
 
 
+app.use(bodyParser.json());
 
 app.use(express.static('public'));
-
-
-
-
 
 
 
@@ -72,6 +70,7 @@ app.get('/product', (req, res) => {
 
 
 });
+
 
 
 app.listen(port, () => {
